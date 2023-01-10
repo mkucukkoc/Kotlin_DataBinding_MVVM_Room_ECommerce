@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:title="Basket"
+        android:id="@+id/basket"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"
+        />
+    <item
+        android:id="@+id/category"
+        android:icon="@drawable/ic_baseline_category_24"
+        android:title="Categories" />
+</menu>
