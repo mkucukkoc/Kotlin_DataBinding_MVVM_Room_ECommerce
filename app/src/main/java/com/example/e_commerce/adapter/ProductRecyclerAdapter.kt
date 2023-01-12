@@ -9,21 +9,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.e_commerce.R
 import com.example.e_commerce.databinding.BesinRecyclerRowBinding
 import com.example.e_commerce.model.Product
-import com.example.e_commerce.util.gorselIndir
-import com.example.e_commerce.util.placeHolderYap
 import com.example.e_commerce.view.ProductListDirections
-
 import kotlinx.android.synthetic.main.besin_recycler_row.view.*
+
 
 class ProductRecyclerAdapter(var productList: ArrayList<Product>) :
     RecyclerView.Adapter<ProductRecyclerAdapter.ProductViewHolder>(),ProductClickListener {
-    class ProductViewHolder(var view: BesinRecyclerRowBinding) : RecyclerView.ViewHolder(view.root) {
-
-
-
+    class ProductViewHolder(var view: BesinRecyclerRowBinding) : RecyclerView.ViewHolder(view.root)
+    {
     }
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         //bu aşagıdaki 3 satırda yapılan şey besin_recycler_row içindeki oluşturdugumuz yapıyı
         //productliste aktardık.
@@ -42,13 +36,14 @@ class ProductRecyclerAdapter(var productList: ArrayList<Product>) :
      holder.view.product=productList[position]
         holder.view.listener=this
 
-    /* //besin_recycler_row ın içindeki productname i view de göstermek için aşagdaki 1 satır kodu yazdık.
-        holder.itemView.productName.text = productList.get(position).name
         holder.itemView.detailProduct.setOnClickListener {
 
             val action=ProductListDirections.actionProductListToProductDetailFragment(productList.get(position).uuid)
             Navigation.findNavController(it).navigate(action)
         }
+    /* //besin_recycler_row ın içindeki productname i view de göstermek için aşagdaki 1 satır kodu yazdık.
+        holder.itemView.productName.text = productList.get(position).name
+
 
         holder.itemView.imageView.gorselIndir(productList.get(position).pictureUrl, placeHolderYap(holder.itemView.context))
        */
@@ -67,8 +62,8 @@ class ProductRecyclerAdapter(var productList: ArrayList<Product>) :
         uuid?.let {
             val action=ProductListDirections.actionProductListToProductDetailFragment(it)
             Navigation.findNavController(view).navigate(action)
+
+
         }
     }
-
-
 }

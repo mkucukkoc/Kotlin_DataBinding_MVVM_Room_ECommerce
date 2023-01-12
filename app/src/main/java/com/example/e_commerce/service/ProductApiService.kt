@@ -8,8 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ProductApiService {
     //https://raw.githubusercontent.com/mkucukkoc/JsonECommerce/main/products.json
-    private val BASE_URL="https://raw.githubusercontent.com/"
-    //private val BASE_URL="https://176.240.102.58:7287"
+   private val BASE_URL="https://raw.githubusercontent.com/"
+    //private val BASE_URL="https://localhost:7287"
 
     private val api=Retrofit.Builder()
         .baseUrl(BASE_URL)

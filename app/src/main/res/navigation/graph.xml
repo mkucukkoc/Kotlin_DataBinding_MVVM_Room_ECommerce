@@ -29,11 +29,7 @@
     <fragment
         android:id="@+id/productDetailFragment"
         android:name="com.example.e_commerce.view.ProductDetailFragment"
-        android:label="fragment_product_detail"
-        tools:layout="@layout/fragment_product_detail" >
-        <action
-            android:id="@+id/action_productDetailFragment_to_productList"
-            app:destination="@id/productList" />
+        android:label="ProductDetailFragment" >
         <argument
             android:name="besinId"
             app:argType="integer"
