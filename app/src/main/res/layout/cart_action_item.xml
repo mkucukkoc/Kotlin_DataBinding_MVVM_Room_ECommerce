@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:background="?attr/selectableItemBackground"
+    android:padding="16dp"
+    android:focusable="true"
+    android:clipToPadding="false"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageviewcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_shopping_basket_24" />
+
+    <TextView
+        android:id="@+id/cart_badge_text_view"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="-4dp"
+        android:background="@drawable/badge_shape"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white" />
+</FrameLayout>

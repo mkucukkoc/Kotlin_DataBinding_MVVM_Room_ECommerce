@@ -10,11 +10,14 @@
         android:title="Search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="always|collapseActionView" />
+
+
     <item
-        android:id="@+id/cikisyap"
-        android:icon="@drawable/login"
-        android:title="Add contact"
-        app:showAsAction="ifRoom">
-    </item>
+        android:title="Basket"
+        android:id="@+id/basket"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"
+        app:showAsAction="always"
+        app:actionLayout="@layout/cart_action_item"
+        />
 
 </menu>

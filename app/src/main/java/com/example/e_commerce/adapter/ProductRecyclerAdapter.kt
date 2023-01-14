@@ -1,5 +1,6 @@
 package com.example.e_commerce.adapter
 
+import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.e_commerce.R
 import com.example.e_commerce.databinding.BesinRecyclerRowBinding
 import com.example.e_commerce.model.Product
+import com.example.e_commerce.view.MainActivity
+import com.example.e_commerce.view.ProductList
 import com.example.e_commerce.view.ProductListDirections
 import kotlinx.android.synthetic.main.besin_recycler_row.view.*
 
